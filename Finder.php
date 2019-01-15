@@ -12,7 +12,7 @@
 namespace dektrium\user;
 
 use yii\authclient\ClientInterface;
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\db\ActiveQuery;
 
 /**
@@ -20,7 +20,7 @@ use yii\db\ActiveQuery;
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class Finder extends Object
+class Finder extends BaseObject
 {
     /** @var ActiveQuery */
     protected $userQuery;
